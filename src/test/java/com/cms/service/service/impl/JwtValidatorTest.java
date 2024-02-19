@@ -30,7 +30,7 @@ public class JwtValidatorTest{
 	private JwtValidatorForTest jwtValidatorForTest;
 	
 	@InjectMocks
-    private com.cms.service.config.jwtValidator jwtValidator;
+    private com.cms.service.config.JwtValidator jwtValidator;
 	@Mock
     private HttpServletRequest request;
 	@Mock
@@ -42,7 +42,7 @@ public class JwtValidatorTest{
 
     @BeforeEach
     public void setUp() {
-        jwtValidator = new com.cms.service.config.jwtValidator();
+        jwtValidator = new com.cms.service.config.JwtValidator();
         request = mock(HttpServletRequest.class);
         response = mock(HttpServletResponse.class);
         filterChain = mock(FilterChain.class);

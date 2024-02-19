@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Filter class for validating JWT (JSON Web Token) and setting authentication in the Spring Security context.
  */
-public class jwtValidator extends OncePerRequestFilter {
+public class JwtValidator extends OncePerRequestFilter {
 
 	
 	/**
